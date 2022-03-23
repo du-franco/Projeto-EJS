@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <%- include('../partials/head'); %>
+
+    <title>Nossos Funcionários</title>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <section class="cadastro" style="margin:20px">
+            <form action="/funcionarios/cadastrar" method="post">
+                <div class="mb-3">
+                    <label class="form-label">Nome:</label>
+                    <input type="text" class="form-control" name="nomeFunc" value="<%=resultado.nome%>">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Cargo:</label>
+                    <input type="text" class="form-control" name="cargoFunc" value="<%=resultado.cargo%>">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email:</label>
+                    <input type="email" class="form-control" name="emailFunc" value="<%=resultado.email%>">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Senha:</label>
+                    <input type="password" class="form-control" name="senhaFunc" value="<%=resultado.senha%>">
+                </div>
+                <input type="hidden" name="idFunc" value="<%=resultado._id%>">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>

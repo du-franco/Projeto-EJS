@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <%- include('../partials/head'); %>
+
+    <title>Nossos Funcionários</title>
+</head>
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<body class="container">
+
+   
+    <main>
+        <section class="cadastro" style="margin:20px">
+            <form action="/login/verificarLogin" method="post">
+                
+                <div class="mb-3">
+                    <label class="form-label">Cargo:</label>
+                    <input type="text" class="form-control" name="cargoFunc">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email:</label>
+                    <input type="email" class="form-control" name="emailFunc">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Senha:</label>
+                    <input type="text" class="form-control" name="senhaFunc">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+        </section>
+    </main>
+    
+    <%- include('../partials/footer'); %>
+   
+</body>
+</html>
