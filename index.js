@@ -6,7 +6,7 @@ const funcionarios_router = require('./routers/funcionarios-routers')
 const login_router = require('./routers/login-routers')
 
 
-mongoose.connect('mongodb+srv://edufranco:eed240818@cluster0.abs0g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect('', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
